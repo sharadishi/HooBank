@@ -8,11 +8,12 @@ const Footer = () => (
     <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
         <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
             <div className="flex flex-1 flex-col justify-start mr-10">
-                <img
+                {/* <img
                     src={logo}
                     alt="logo"
                     className="w-[266px] h-[72px] object-contain"
-                />
+                /> */}
+                <div className="text-5xl text-white" >FinServe<span className="text-gradient ">Bank</span></div>
                 <p className={`${styles.paragraph} mt-4 max-w-[310px]`}>
                     A new way to make the payment easy, reliable and secure.
                 </p>
@@ -41,7 +42,7 @@ const Footer = () => (
             </div>
         </div>
         <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3f3e45]">
-            <p className="font-poppins font-normal text-[18px] text-center leading-[27px] text-white"> &copy; 2022 HooBank. All Rights Reserved.</p>
+            <p className="font-poppins font-normal text-[18px] text-center leading-[27px] text-white"> &copy; 2022 FinServe Bank. All Rights Reserved.</p>
             <div className="flex flex-row md:mt-0 mt-6">
                 {socialMedia.map((social, index) => (
                     <img

@@ -7,13 +7,14 @@ const Navbar = () => {
     const [toggle, setToggle] = useState(false)
     return (
         <nav className="w-full flex py-6 justify-between items-center navbar">
-            <img src={logo} alt="" className="w-[124px] h-[32px]" />
+            {/* <img src={logo} alt="" className="w-[124px] h-[32px]" /> */}
+            <div className="text-5xl text-white" >FinServe<span className="text-gradient ">Bank</span></div>
             <ul className="list-none sm:flex hidden justify-end items-center flex-1">
                 {navLinks.map((nav, index) => (
                     <li
                         key={nav.id}
                         className={`font-poppins font-normal cursor-pointer text-[16px]
-                        ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-white `}
+                        ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} hover:text-secondary hover:border-y-[1px] hover:border-y-[#fff] text-white `}
                     >
                         <a href={`#${nav.id}`}>
                             {nav.title}
@@ -32,7 +33,7 @@ const Navbar = () => {
                             <li
                                 key={nav.id}
                                 className={`font-poppins font-normal cursor-pointer text-[16px]
-                                ${index === navLinks.length - 1 ? 'mr-0' : 'mb-4'} text-white `}
+                                ${index === navLinks.length - 1 ? 'mb-0' : 'mb-4'} text-white `}
                             >
                                 <a href={`#${nav.id}`}>
                                     {nav.title}
